@@ -1,8 +1,8 @@
-package condicionais;
+package loops;
 
 import java.util.Scanner;
 
-public class ex01 {
+public class ex09 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -10,11 +10,12 @@ public class ex01 {
         System.out.print("Digite um número: ");
         int num = sc.nextInt();
 
-        if (num % 2 == 0) {
-            System.out.printf("O número %d é par", num);
+        for (int i = 1; i <= num ; i++) {
+            if (i % 10 != 5) {
+                System.out.print(i + " ");
+            }
         }
-        else {
-            System.out.printf("O número %d é ímpar", num);
-        }
+
+        sc.close();
     }
 }
